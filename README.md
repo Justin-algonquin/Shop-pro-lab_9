@@ -2,7 +2,7 @@
 
 Cloud Migration (CST8913) – Lab 09 | November 2026
 
-Student: Justin
+Student: Justin AROGA
 
 ## 1. Cost Estimate Report
 
@@ -79,6 +79,32 @@ Azure can support ShopPro’s migration, but the current calculator estimate is 
 
 Sources: Microsoft Azure Pricing Calculator, ExportedEstimate.xlsx (November 2026); ShopPro International Lab 09 scenario. Migration allowances, reservation examples and growth assumptions are my own planning examples and are identified as such.
 
-[Estimation_Cloud_Migrantion9.docx](Estimation_Cloud_Migrantion9.docx)
+# Microsoft Azure Estimate
 
-[ExportedEstimate.xlsx](ExportedEstimate.xlsx)
+## Your Estimate
+
+| Service category | Service type | Custom name | Region | Description | Estimated monthly cost | Estimated upfront cost |
+| --- | --- | --- | --- | --- | --- | --- |
+| Compute | Virtual Machines | | East US | 10 D2ads v5 (2 vCPUs, 8 GB RAM) x 730 Hours (Pay as you go), Linux,  (Pay as you go); 10 managed disks – E10; Inter Region transfer type, 5 GB outbound data transfer from East US to East Asia | 847.9 | 0 |
+| Compute | Virtual Machines | | West Europe | 10 D2ads v5 (2 vCPUs, 8 GB RAM) x 730 Hours (Pay as you go), Linux,  (Pay as you go); 10 managed disks – E10; Inter Region transfer type, 5 GB outbound data transfer from West Europe to East Asia | 1008.5 | 0 |
+| Compute | Virtual Machines | | Southeast Asia | 10 D2s v5 (2 vCPUs, 8 GB RAM) x 730 Hours (Pay as you go), Linux,  (Pay as you go); 10 managed disks – E10; Inter Region transfer type, 5 GB outbound data transfer from Southeast Asia to East Asia | 972 | 0 |
+| Compute | Virtual Machines | | East US | 20 D4s v5 (4 vCPUs, 16 GB RAM) x 730 Hours (Pay as you go), Linux,  (Pay as you go); 0 managed disks – E1; Inter Region transfer type, 5 GB outbound data transfer from East US to East Asia | 2803.2 | 0 |
+| Compute | Virtual Machines | | East US | 3 D4s v5 (4 vCPUs, 16 GB RAM) x 730 Hours (Pay as you go), Windows (License included), OS Only; 3 managed disks – E40; Inter Region transfer type, 5 GB outbound data transfer from East US to East Asia | 1284.24 | 0 |
+| Databases | Azure SQL Database | | East US | Single Database, vCore, Hyperscale, Provisioned, Standard-series (Gen 5), 1 - 4 vCore Database(s) x 730 Hours, 0 high availability replicas per database x 730 Hours, 0 Named replicas per database x 730 Hours, 5120 GB Storage, RA-GRS Backup Storage Redundancy, 1,024 GB Point-In-Time Restore,  0 x 5 GB Long Term Retention | 2018.1672 | 0 |
+| Databases | Azure Cosmos DB | | East US | Azure Cosmos DB for NoSQL (formerly Core), Standard provisioned throughput (manual), Always-free quantity disabled, Pay as you go, Business Critical, Per Partition Automatic Failover- East US (Write Region), 10,000 RUs x 730 Hours, 10,240 GB transactional storage, Analytical storage disabled, 2 copies of periodic backup storage, Dedicated Gateway not enabled | 3728 | 0 |
+| Networking | Load Balancer | | East US | Standard Tier: 5 Rules, 1,000 GB Data Processed | 23.25 | 0 |
+| Databases | Azure Synapse Analytics | | East US | Tier: Compute Optimized Gen2, Dedicated SQL Pools: DWU 500 x 730 Hours, 15 TB of storage with Geo-redundant disaster recovery; East US Region, 100 GB of data collected per day, 7 days of Hot Cache, 30 days of total retention, 7 times estimated data compression, 730 Hours of 2 x Extra Small (2 vCores) Engine Instances, 730 Hours of 2 x 1 vCore Data Management Instances | 7546.61971428571 | 0 |
+| Compute | Virtual Machines | | East US | 2 NC4as T4 v3 (4 vCPUs, 28 GB RAM) x 160 Hours (Pay as you go), Linux,  (Pay as you go); 0 managed disks – S4; Inter Region transfer type, 5 GB outbound data transfer from East US to East Asia | 168.32 | 0 |
+| DevOps | Azure Monitor | | East US | Log analytics: Log Data Ingestion: 0 GB Daily Auxiliary Logs without processing, 0 GB Daily Auxiliary Logs with processing, 0 GB Daily Basic logs, 50 GB Daily Analytics logs ingested, 1 months of Interactive Retention, 0 months of Retention, 0 GB data restored for 0 days, 0 queries per day with 0 GB data scanned per query, 0 GB of Log Data Exported per day, Platform Log Data Processed per day: 0 GB with Destination to Storage or Event Hub and 0 GB with Destination to Marketplace Partners, 0 Search job Queries per day with 0 GB data scanned per query; 0 SCOM MI Endpoints; Metrics: Using default collection estimation method 0 API calls, (with a cluster of 0 linux nodes, 0 Windows nodes, 0 containers, and 0 pods), 0 Average daily Dashboards users, 7 Dashboards, 50000 Data samples queried per dashboard, 25 promql alerting rules, 25 promql recording rules, 0 metrics datapoints exported; Application Insights: 0 GB Daily Analytics logs ingested, 3 months Data retention, 0 Standard Web Tests, 5 Minutes Execution frequency, Executing for 730 hours; 0 resources monitored X 1 metric time-series monitored per resource, 5 Minutes Log Signal frequency with 0 log signals monitored and 1 time series per signal, 0 Additional events (in thousands), 0 Additional emails (in 100 thousands), 0 Additional push notifications (in 100 thousands), 0 Additional web hooks (in millions) | 3438.5 | 0 |
+| Management and governance | Azure Site Recovery | | East US | 0 Customer instances, 50 Azure instances | 1250 | 0 |
+| Support | | | Support | | 0 | 0 |
+| | | | Licensing Program | Microsoft Customer Agreement (MCA) | | |
+| | | | Billing Account | | | |
+| | | | Billing Profile | | | |
+| | | | Total | | 25088.69691428571 | 0 |
+
+As requested, I have reproduced all the information from my previously submitted Word and Excel files in Markdown format. The original text, tables, descriptions, and numerical values have been preserved, with only the formatting adapted to Markdown.
+
+All prices shown are in United States – Dollar ($) USD. This is a summary estimate, not a quote. For up to datehttps://azure.microsoft.com/pricing/calculator/
+
+This estimate was created at 11/6/2026 4:15:31 AM UTC.
