@@ -107,4 +107,4 @@ As requested, I have reproduced all the information from my previously submitted
 
 All prices shown are in United States – Dollar ($) USD. This is a summary estimate, not a quote. For up to datehttps://azure.microsoft.com/pricing/calculator/
 
-This estimate was created at 11/6/2026 4:15:31 AM UTC.
+
